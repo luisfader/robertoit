@@ -1,8 +1,24 @@
-# Italiano con Robert Fader 🇮🇹
+# Italiano con Roberto Fader 🇮🇹
 
-Materiale didattico interattivo per imparare l'italiano attraverso la cultura italiana.
+Materiale didattico interattivo di **Roberto Fader** per imparare l'italiano attraverso la cultura italiana.
 
-## Prima lezione: La musica italiana oggi
+Il sito è una raccolta di lezioni: la pagina principale (`index.html`) è il catalogo, e ogni lezione vive nella sua cartella dentro `lezioni/`.
+
+```
+index.html                         ← catalogo di tutte le lezioni
+lezioni/
+  01-musica-italiana/index.html    ← lezione 01
+  02-.../index.html                ← le prossime lezioni
+```
+
+## Aggiungere una nuova lezione
+
+1. Copiare la cartella di una lezione esistente, ad esempio `lezioni/01-musica-italiana/`, con un nuovo nome (`lezioni/02-cucina-italiana/`).
+2. Modificare i contenuti del nuovo `index.html` (titolo, testi, esercizi, soluzioni).
+3. Nel nuovo file cambiare anche `var prefix='robertoit-musica-v1-';` con un prefisso unico (es. `'robertoit-cucina-v1-'`), così i progressi di ogni lezione restano separati.
+4. In `index.html` (il catalogo) copiare un blocco `<li>` della lista `lessons` e aggiornare link, numero, titolo e descrizione.
+
+## Lezione 01: La musica italiana oggi
 
 **Livello:** A2–B1  
 **Durata indicativa:** 60 minuti  
@@ -20,7 +36,7 @@ La lezione comprende:
 
 ## Aprire e pubblicare
 
-Il sito è composto da un solo file: `index.html`. Non richiede build, dipendenze, account, database o tracciamento.
+Il sito è composto solo da file HTML statici. Non richiede build, dipendenze, account, database o tracciamento.
 
 Per pubblicarlo come sito pubblico:
 
@@ -33,7 +49,9 @@ Dopo aver abilitato GitHub Pages, l'indirizzo previsto è:
 
 https://luisfader.github.io/robertoit/
 
-L'URL sopra funziona solo quando GitHub Pages viene attivato e il deploy si completa.
+La prima lezione si trova in https://luisfader.github.io/robertoit/lezioni/01-musica-italiana/
+
+Gli URL sopra funzionano solo quando GitHub Pages viene attivato e il deploy si completa.
 
 ## Note didattiche
 
@@ -43,6 +61,6 @@ Il tasto **RU** nasconde o mostra gli aiuti in russo. Il quiz e le frasi grammat
 
 ## Personalizzazione
 
-Palette ispirata all'Italia: verde profondo, rosso terracotta, crema e oro. Layout responsive, navigazione interna, controlli accessibili e modalità di stampa. Stili e logica sono in `index.html`, per facilitare la distribuzione.
+Palette ispirata all'Italia: verde profondo, rosso terracotta, crema e oro. Layout responsive, navigazione interna, controlli accessibili e modalità di stampa. Ogni lezione contiene i propri stili e la propria logica in un unico file, per facilitare la distribuzione.
 
-**Autore del materiale:** Robert Fader.
+**Autore del materiale:** Roberto Fader.
